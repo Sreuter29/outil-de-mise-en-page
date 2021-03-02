@@ -1,0 +1,111 @@
+*, ::before, ::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background: #f1f1f1;
+}
+
+header {
+  height: 300px;
+  background-image:
+  -webkit-gradient(linear, left top, right bottom, from(rgba(235, 106, 59, 0.3)), to(rgba(149, 30, 91, 0.3))),
+  url(img/title.jpg);
+  background-image:
+  -o-linear-gradient(left top, rgba(235, 106, 59, 0.3), rgba(149, 30, 91, 0.3)),
+  url(img/title.jpg);
+  background-image:
+  linear-gradient(to right bottom, rgba(235, 106, 59, 0.3), rgba(149, 30, 91, 0.3)),
+  url(img/title.jpg);
+  background-size: cover;
+  background-position: top;
+  -webkit-clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+          clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+  margin-bottom: 10px;
+  position: relative;
+}
+
+h1 {
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-25%, -50%);
+      -ms-transform: translate(-25%, -50%);
+          transform: translate(-25%, -50%);
+}
+
+h2 {
+  text-align: center;
+  padding: 10px;
+  color: rgb(9, 53, 139);
+}
+
+/* Clic droit personnalisé */
+.menu-perso {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  display: none;
+}
+
+.btn {
+  font-size: 25px;
+  width: 100%;
+  height: 100%;
+}
+
+#contenu {
+  width: 69%;
+  height: 320px;
+  border: 1px black solid;
+  float: left;
+  margin-right: 10px;
+  overflow-y: auto;
+  background-color: white;
+}
+
+#controles {
+  width: 30%;
+  height: 320px;
+  border: 1px black solid;
+  float: left;
+}
+
+#controles div {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+label {
+  float: left;
+  width: 140px;
+}
+
+#image {
+  width: 110px;
+  height: 110px;
+  margin: 10px 10px 10px 100px;
+}
+
+p {
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: 'Times New Roman';
+}
